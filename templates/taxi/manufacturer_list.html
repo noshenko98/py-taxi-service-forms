@@ -15,13 +15,12 @@
       </tr>
 
       {% for manufacturer in manufacturer_list %}
-
         <tr>
           <td>
-              {{ manufacturer.id }}
+            {{ manufacturer.id }}
           </td>
           <td>
-              {{ manufacturer.name }}
+            {{ manufacturer.name }}
           </td>
           <td>
               {{ manufacturer.country }}
@@ -32,7 +31,7 @@
       {% endfor %}
     </table>
   {% else %}
-      <p>There are no manufacturers in the service.</p>
+    <p>There are no manufacturers in the service.</p>
   {% endif %}
 {% endblock %}
 
